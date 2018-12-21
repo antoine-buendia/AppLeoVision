@@ -21,6 +21,7 @@ import android.view.MenuItem;
 import android.widget.Toast;
 
 import com.example.frank.leovision.activities.ProductsListActivity;
+import com.example.frank.leovision.fragment.ProductsFragment;
 
 
 public class MainActivity extends AppCompatActivity
@@ -116,7 +117,7 @@ public class MainActivity extends AppCompatActivity
 
             // Handle the camera action
         } else if (id == R.id.nav_gallery) {
-
+            fragmentChanges("product-list");
 
 
 
@@ -135,6 +136,11 @@ public class MainActivity extends AppCompatActivity
         return true;
     }
 
+    public void fragmentChanges(String _fragment){
+//        if (_fragment.equals("product-list")){
+//            getFragmentManager().beginTransaction().
+//                    replace(R.id.mainFragment, new ProductsFragment()).addToBackStack(null).commit();
+//        }
 
-
+    }
 }

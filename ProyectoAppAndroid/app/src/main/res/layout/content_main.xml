@@ -8,4 +8,10 @@
     tools:context=".MainActivity"
     tools:showIn="@layout/app_bar_main">
 
+    <FragmentLayout
+        android:id="@+id/mainFragment"
+        android:Layout_width="match_parent"
+        android:Layout_height="match_content">
+    </FragmentLayout>
+
 </android.support.constraint.ConstraintLayout>
